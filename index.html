@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ruby Cookies — Delicious Moments Baked With Love</title>
+<meta name="description" content="Ruby Cookies is a premium handmade cookie brand in Malaysia, offering freshly baked cookies for gifts, celebrations, and everyday indulgence.">
+<meta name="keywords" content="Ruby Cookies, handmade cookies Malaysia, premium cookies, cookie gifts, chocolate chip cookies">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header id="siteHeader">
+  <nav>
+    <div class="logo"><span class="seed"></span>Ruby Cookies</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="active" data-i18n="nav_home">Home</a></li>
+      <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+      <li><a href="#products" data-i18n="nav_products">Products</a></li>
+      <li><a href="#why" data-i18n="nav_why">Why Choose Us</a></li>
+      <li><a href="#testimonials" data-i18n="nav_testimonials">Testimonials</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button class="lang-btn" id="langBtn">🌐 <span id="langLabel">EN</span></button>
+        <div class="lang-menu" id="langMenu">
+          <button data-lang="en" class="active">English</button>
+          <button data-lang="ms">Bahasa Melayu</button>
+          <button data-lang="zh">中文</button>
+          <button data-lang="ta">தமிழ்</button>
+        </div>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow" data-i18n="hero_eyebrow">Premium Handmade Cookies</div>
+      <h1 data-i18n="hero_title">Delicious Moments <em>Baked</em> With Love</h1>
+      <p class="lead" data-i18n="hero_sub">Experience freshly baked premium cookies made with carefully selected ingredients and unforgettable flavours.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-primary" data-i18n="hero_btn_shop">Shop Cookies</a>
+        <a href="#about" class="btn btn-outline" data-i18n="hero_btn_learn">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <svg class="cookie-hero" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="170" fill="#c9915a"/>
+        <circle cx="200" cy="200" r="170" fill="url(#g)" opacity="0.5"/>
+        <defs>
+          <radialGradient id="g" cx="35%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#e3b57a"/>
+            <stop offset="100%" stop-color="#a5703c"/>
+          </radialGradient>
+        </defs>
+        <circle cx="140" cy="130" r="16" fill="#3d2820"/>
+        <circle cx="250" cy="110" r="12" fill="#3d2820"/>
+        <circle cx="290" cy="200" r="15" fill="#3d2820"/>
+        <circle cx="230" cy="270" r="13" fill="#3d2820"/>
+        <circle cx="130" cy="250" r="11" fill="#3d2820"/>
+        <circle cx="170" cy="200" r="9" fill="#3d2820"/>
+        <circle cx="250" cy="190" r="8" fill="#3d2820"/>
+        <circle cx="180" cy="300" r="10" fill="#3d2820"/>
+      </svg>
+      <span class="crumb crumb1"></span>
+      <span class="crumb crumb2"></span>
+      <span class="crumb crumb3"></span>
+    </div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><path d="M0,0 Q15,26 30,0 Q45,26 60,0 Q75,26 90,0 Q105,26 120,0 Q135,26 150,0 Q165,26 180,0 Q195,26 210,0 Q225,26 240,0 Q255,26 270,0 Q285,26 300,0 Q315,26 330,0 Q345,26 360,0 Q375,26 390,0 Q405,26 420,0 Q435,26 450,0 Q465,26 480,0 Q495,26 510,0 Q525,26 540,0 Q555,26 570,0 Q585,26 600,0 Q615,26 630,0 Q645,26 660,0 Q675,26 690,0 Q705,26 720,0 Q735,26 750,0 Q765,26 780,0 Q795,26 810,0 Q825,26 840,0 Q855,26 870,0 Q885,26 900,0 Q915,26 930,0 Q945,26 960,0 Q975,26 990,0 Q1005,26 1020,0 Q1035,26 1050,0 Q1065,26 1080,0 Q1095,26 1110,0 Q1125,26 1140,0 Q1155,26 1170,0 Q1185,26 1200,0 L1200,26 L0,26 Z" fill="#fffdf9"/></svg>
+</div>
+
+<!-- ===================== ABOUT ===================== -->
+<section class="about" id="about">
+  <div class="wrap about-grid">
+    <div class="about-badge">
+      <div class="stamp" data-i18n="about_stamp">Handmade<br>in Malaysia<br>since day one</div>
+    </div>
+    <div class="about-text reveal">
+      <div class="eyebrow" data-i18n="about_eyebrow">Our Story</div>
+      <h2 data-i18n="about_title">Every Cookie Tells a Story</h2>
+      <p data-i18n="about_p1">At Ruby Cookies, we believe every cookie tells a story. Our mission is to create delicious handmade cookies that bring happiness and unforgettable moments to every customer.</p>
+      <p data-i18n="about_p2">From our kitchen to your doorstep, each batch is baked in small quantities to guarantee freshness, using only the finest butter, chocolate, and love.</p>
+      <div class="stats">
+        <div class="stat">
+          <span class="num">10+</span>
+          <span class="label" data-i18n="stat_flavours">Cookie Flavours</span>
+        </div>
+        <div class="stat">
+          <span class="num">5000+</span>
+          <span class="label" data-i18n="stat_customers">Happy Customers</span>
+        </div>
+        <div class="stat">
+          <span class="num">100%</span>
+          <span class="label" data-i18n="stat_fresh">Fresh Ingredients</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTS ===================== -->
+<section class="products" id="products">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="products_eyebrow">Our Menu</div>
+      <h2 data-i18n="products_title">Freshly Baked, Beautifully Made</h2>
+      <p data-i18n="products_sub">Six signature flavours, baked in small batches every day.</p>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+</section>
+
+<div class="scallop" aria-hidden="true" style="transform:rotate(180deg);">
+  <svg viewBox="0 0 1200 26" preserveAspectRatio="none"><path d="M0,0 Q15,26 30,0 Q45,26 60,0 Q75,26 90,0 Q105,26 120,0 Q135,26 150,0 Q165,26 180,0 Q195,26 210,0 Q225,26 240,0 Q255,26 270,0 Q285,26 300,0 Q315,26 330,0 Q345,26 360,0 Q375,26 390,0 Q405,26 420,0 Q435,26 450,0 Q465,26 480,0 Q495,26 510,0 Q525,26 540,0 Q555,26 570,0 Q585,26 600,0 Q615,26 630,0 Q645,26 660,0 Q675,26 690,0 Q705,26 720,0 Q735,26 750,0 Q765,26 780,0 Q795,26 810,0 Q825,26 840,0 Q855,26 870,0 Q885,26 900,0 Q915,26 930,0 Q945,26 960,0 Q975,26 990,0 Q1005,26 1020,0 Q1035,26 1050,0 Q1065,26 1080,0 Q1095,26 1110,0 Q1125,26 1140,0 Q1155,26 1170,0 Q1185,26 1200,0 L1200,26 L0,26 Z" fill="#3d2820"/></svg>
+</div>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="why_eyebrow">The Ruby Difference</div>
+      <h2 data-i18n="why_title">Why Choose Ruby Cookies</h2>
+      <p data-i18n="why_sub">Quality and care in every single bite.</p>
+    </div>
+    <div class="feature-grid" id="featureGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="testimonials" id="testimonials">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow" data-i18n="testi_eyebrow">Customer Love</div>
+      <h2 data-i18n="testi_title">What Our Customers Say</h2>
+    </div>
+    <div class="testi-grid" id="testiGrid"></div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div class="contact-info reveal">
+      <div class="eyebrow" data-i18n="contact_eyebrow">Get In Touch</div>
+      <h2 data-i18n="contact_title">Let's Talk Cookies</h2>
+      <p data-i18n="contact_sub">Have a question, custom order, or bulk gift request? We'd love to hear from you.</p>
+      <div class="info-row"><span class="ic">✉</span> hello@rubycookies.com</div>
+      <div class="info-row"><span class="ic">📍</span> <span data-i18n="contact_location">Malaysia</span></div>
+      <div class="info-row"><span class="ic">🕐</span> <span data-i18n="contact_hours">Mon–Sat, 9am–7pm</span></div>
+    </div>
+    <form id="contactForm" class="reveal">
+      <div class="field">
+        <label for="cf-name" data-i18n="form_name">Name</label>
+        <input id="cf-name" type="text" required>
+      </div>
+      <div class="field">
+        <label for="cf-email" data-i18n="form_email">Email</label>
+        <input id="cf-email" type="email" required>
+      </div>
+      <div class="field">
+        <label for="cf-message" data-i18n="form_message">Message</label>
+        <textarea id="cf-message" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" data-i18n="form_submit">Send Message</button>
+      <p class="form-note" id="formNote" data-i18n="form_note">We'll get back to you within 24 hours.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Ruby Cookies</div>
+        <p data-i18n="footer_desc">Premium handmade cookies, baked fresh in Malaysia for every celebration and everyday moment.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">IG</a>
+          <a href="#" aria-label="Facebook">FB</a>
+          <a href="#" aria-label="TikTok">TT</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_links">Quick Links</h4>
+        <ul>
+          <li><a href="#home" data-i18n="nav_home">Home</a></li>
+          <li><a href="#products" data-i18n="nav_products">Products</a></li>
+          <li><a href="#about" data-i18n="nav_about">About Us</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 data-i18n="footer_contact">Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@rubycookies.com">hello@rubycookies.com</a></li>
+          <li><a href="#" data-i18n="contact_location">Malaysia</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span data-i18n="footer_copy">© 2026 Ruby Cookies. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- Language files (each defines a translations_xx object) -->
+<script src="lang/en.js"></script>
+<script src="lang/ms.js"></script>
+<script src="lang/zh.js"></script>
+<script src="lang/ta.js"></script>
+
+<!-- Embedded SVG assets -->
+<script src="assets/cookie-illustrations.js"></script>
+<script src="assets/feature-icons.js"></script>
+
+<!-- Main app logic -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
